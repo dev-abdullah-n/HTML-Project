@@ -1,0 +1,100 @@
+<html>
+
+<head>
+<style>
+div {
+  background-image: url('Register1.png');
+  background-size: cover;
+  padding: 75px 0;
+}
+</style>
+
+<title>Register</title>
+</head>
+
+<body>
+ <h1>DIGI<font color="#d82a4e">LAB</font></h1>
+<center> <h1 style="background-color: #d82a4e; color: white;">REGISTER HERE</h1> </center>
+<div class="body" style="background-color:FFD700; color:black ; padding:40px;">
+
+<h4>Name</h4> 
+<input type="text" >
+
+<h4>Email Address</h4> 
+<input type="text"> 
+
+<script>
+function mydate()
+{
+  //alert("");
+document.getElementById("dt").hidden=false;
+document.getElementById("ndt").hidden=true;
+}
+function mydate1()
+{
+d=new Date(document.getElementById("dt").value);
+dt=d.getDate();
+mn=d.getMonth();
+mn++;
+yy=d.getFullYear();
+document.getElementById("ndt").value=dt+"/"+mn+"/"+yy
+document.getElementById("ndt").hidden=false;
+document.getElementById("dt").hidden=true;
+}
+</script>
+<h4>Date of birth</h4> 
+<input type="date" >
+
+
+<script>
+function mydate()
+{
+  //alert("");
+document.getElementById("dt").hidden=false;
+document.getElementById("ndt").hidden=true;
+}
+function mydate1()
+{
+ d=new Date(document.getElementById("dt").value);
+dt=d.getDate();
+mn=d.getMonth();
+mn++;
+yy=d.getFullYear();
+document.getElementById("ndt").value=dt+"/"+mn+"/"+yy
+document.getElementById("ndt").hidden=false;
+document.getElementById("dt").hidden=true;
+}
+</script>
+
+
+<h4>Gender</h4>
+<form>
+<input type="radio" name="gender" value="male" checked>Male<br>
+<input type="radio" name="gender" value="female" checked>Female<br>
+<input type="radio" name="gender" value="other" checked>Other<br>
+</form>
+
+
+<h4>Project content</h4>
+ 
+<form>
+<select name="cars" size="4" multiple>
+<option value="Economy">Economy </option>
+<option value="saab">Business</option>
+<option value="fiat">Eduction</option>
+<option value="volvo">Gaming</option>
+<option value="saab">Other</option>
+
+</select>
+<br><br>
+
+<form>
+<input type="checkbox" name="gender" value="male" checked>Get our news to your Email<br>
+</form>
+
+<button>REGISTER</button>
+</form>
+</div>
+</body>
+</html>
+
